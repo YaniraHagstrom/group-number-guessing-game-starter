@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 let randomNumber = 0;
 // here is where we generate the first random number
 numberGenerator();
